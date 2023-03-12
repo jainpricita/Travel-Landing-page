@@ -53,7 +53,7 @@ p {
 }
 
 .container {
-    margin: 0 auto;
+    margin: 0 16%;
     max-width: 68rem;
     padding-top: 2.5rem;
 }
@@ -64,7 +64,7 @@ p {
     min-height: 120vh;
     background: url(imgs/peter-fitzpatrick-a9OSGB0sJbs-unsplash.jpg) no-repeat;
     background-position: center top;
-    background-size: 100% 92%;
+    background-size: 100% 83%;
     color: var(--white);
 }
 
@@ -102,7 +102,7 @@ p {
 
 .primary-title {
     margin: 12rem auto 2rem auto;
-    font-size: 3.6rem;
+    font-size: 3.4rem;
     line-height: 1.4em;
     font-weight: 800;
 }
@@ -116,44 +116,63 @@ p {
 .search-bar {
     padding: 1.7rem;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .search-form {
     border-radius: 10px;
-    padding: 1.2rem 2rem;
+    padding: 1rem 2rem;
     background-color: #fff;
     color: #000;
+    
+    
 }
 
-.lg {
-    width: 20%;
+.search-form button{
+    width: 26%;
+    text-align: left;
+    letter-spacing: .1rem;
 }
+.search-form button i{
+    margin-left: .2rem;
+}
+
 
 label {
     display: flex;
     flex-direction: column;
     font-weight: 800;
     font-size: .8rem;
+    text-align: left;
 }
 
-input {
+label input {
     border: none;
     outline: none;
     background-color: transparent;
-    margin-top: .5rem;
+    margin-top: .2rem;
+    font-size: .7rem;
+    text-align: left;
 }
 
 
+
+
+
 .info-features {
-    margin-top: 9rem;
+    margin-top: 9.5rem;
     justify-content: space-evenly;
-    gap: 3em;
+    gap: 4em;
     background-color: var(--white);
     color: var(--black);
-    padding: 2em;
+    padding: 2.5em;
     border-radius: 10px;
     box-shadow: -1px 4px 9px 1px var(--medium-grey);
+}
+
+.info i{
+    margin-bottom: 1rem;
+    color: var(--highlight);
 }
 
 .info-title{

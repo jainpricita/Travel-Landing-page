@@ -52,10 +52,52 @@ p {
     border-radius: 10px;
 }
 
+.form {
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    color: #000;  
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid var(--medium-grey);
+    outline: none;
+    background-color: transparent;
+    margin-top: .2rem;
+    font-size: .7rem;
+    text-align: left;
+}
+
+
+.form button{
+    width: 26%;
+    text-align: left;
+    letter-spacing: .1rem;
+}
+
+.section-heading{
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+.section-title{
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-stretch: ultra-expanded;
+}
 .container {
     margin: 0 16%;
     max-width: 68rem;
     padding-top: 2.5rem;
+}
+
+i{
+    color: var(--highlight);
+}
+
+.section-icon i{
+    text-shadow: 0 0 10px var(--medium-grey);
+    margin-left: .8rem;
 }
 
 /*Primary section*/
@@ -119,22 +161,10 @@ p {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.search-form {
-    border-radius: 10px;
-    padding: 1rem 2rem;
-    background-color: #fff;
-    color: #000;
-    
-    
-}
 
-.search-form button{
-    width: 26%;
-    text-align: left;
-    letter-spacing: .1rem;
-}
-.search-form button i{
+.form button i{
     margin-left: .2rem;
+    color: inherit;
 }
 
 
@@ -143,15 +173,6 @@ label {
     flex-direction: column;
     font-weight: 800;
     font-size: .8rem;
-    text-align: left;
-}
-
-label input {
-    border: none;
-    outline: none;
-    background-color: transparent;
-    margin-top: .2rem;
-    font-size: .7rem;
     text-align: left;
 }
 
@@ -185,8 +206,27 @@ label input {
 }
 
 /* Trending 2023 Section */
+.trending{
+    height: 90%;
+}
+.trend {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas:
+        "title  wishlist"
+        "pricing  rating"
+        "features  ."
+    ;
+}
 .trend-img {
     background-color: aqua;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+    height: 11em;
 }
 
 .trend-title {
@@ -212,26 +252,14 @@ label input {
 }
 
 .trending-cards {
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .trend-card {
-    width: 30%;
-    background-color: antiquewhite;
+    width: 32%;
+    background-color: var(--white);
     border-radius: 10px;
     padding: 1em;
-
+ box-shadow: 0 0 7px var(--medium-grey);
 }
 
-.trend {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    grid-template-areas:
-        "title  wishlist"
-        "pricing  rating"
-        "features  ."
-    ;
-}
